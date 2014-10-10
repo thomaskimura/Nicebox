@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gifts | Nicebox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="Cache-control" content="public">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/animations.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container padding-small">
+	<div class="centerColumn">
+		<h2 class="plainText floatLeft no-margin"><a class="plainText" href="index.html"><i class="fa fa-gift"></i> Nicebox</a></h2>
+		<ul class="menu floatRight">
+			<li><a href="about.html" class=" noBorder">About</a></li>
+			<li><a href="contact.html" class=" noBorder">Contact</a></li>
+		</ul>
+	</div>
+</div>
+
+<!--END HEADER-->
+
+
+	<div class="container">
+		<div class="centerColumn">
+			<h1 class="centerText">GIFTS</h1>
+			<p class="centerText biggerText">Take a look at some of the recent boxes sent out to see what you might get. Submit your own photos on Instagram using <strong class="roundText">#WhatsMyBox</strong>. To get the photos right to our phone you should probably follow our Instagram.</p>
+      <p class="centerText"><a href="#" class="nb-button noUnderline"><i class="fa fa-instagram"></i> Follow @Nicebox</a>
+		</div>
+	</div>
+
+  <div class="whiteBackground padding">
+  	<div class="container">
+  		<div class="centerColumn">
+        <div id="instafeed"></div>
+        <p class="centerText margin"><a href="#" id="load-more" class="nb-button noUnderline">Load More Boxes</a></p>
+      </div>
+    </div>
+  </div>
+
+
+<!--START FOOTER-->
+
+<footer>
+	<div class="container padding-small">
+    <div class="centerColumn">
+      <p class="large6 bigText no-margin">
+        <a href="index.html" class="noBorder">Home</a>
+        <a href="" class="noBorder">FAQ</a>
+        <a href="" class="noBorder">Blog</a>
+      </p>
+
+      <p class="lightText  large6 rightText no-margin">
+        <a href="" class="noBorder bigText"><i class="fa fa-facebook-square"></i></a>
+        <a href="" class="noBorder bigText"><i class="fa fa-twitter-square"></i></a>
+        <a href="" class="noBorder bigText"><i class="fa fa-instagram"></i></a>
+      </p>
+    </div>
+	</div>
+</footer>
+
+<script type='text/javascript' src='js/instafeed.min.js'></script>
+<script type='text/javascript'>
+  var loadButton = document.getElementById('load-more');
+
+  var feed = new Instafeed({
+      get: 'tagged',
+      tagName: 'gift',
+      clientId: 'a25f5a7693b04351b165dc8df1e6aded',
+      limit: 30
+  });
+
+  loadButton.addEventListener('click', function() {
+    feed.next();
+    setTimeout(scroll, 100);
+    function scroll() {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+  });
+
+  feed.run();
+</script>
+
+</body>
+</html>

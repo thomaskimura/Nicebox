@@ -1,9 +1,10 @@
+<!--START FOOTER-->
+
 <footer>
 	<div class="container padding-small">
-
     <div class="centerColumn">
       <p class="large6 bigText no-margin">
-        <a href="index.php" class="noBorder">Home</a>
+        <a href="index.html" class="noBorder">Home</a>
         <a href="" class="noBorder">FAQ</a>
         <a href="" class="noBorder">Blog</a>
       </p>
@@ -14,14 +15,8 @@
         <a href="" class="noBorder bigText"><i class="fa fa-instagram"></i></a>
       </p>
     </div>
-
 	</div>
 </footer>
 
-
-<?php echo $script; ?>
-
-
 </body>
-
 </html>
