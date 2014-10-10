@@ -1,0 +1,164 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: $base-background-color;
+    color: $base-font-color;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $unitless-line-height;
+
+	@media screen and (max-width: 640px) {
+      font-size: $base-mobile-font-size;
+      line-height: $unitless-mobile-line-height;
+	}
+}
+
+// HEADERS
+h1,h2{color:$base-header-color;}
+h3, h4, h5, h6{color:$base-font-color;}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: $header-line-height;
+  text-rendering: optimizeLegibility; // fix the character spacing for headings
+	@media screen and (max-width: 640px) {
+    line-height: $header-mobile-line-height;
+	}
+}
+
+h1 {
+  @include sizeh1;
+  letter-spacing: 1px;
+  text-transform:uppercase;}
+
+h2 {@include sizeh2;}
+h3 {@include sizeh3;}
+h4 {@include sizeh4;}
+h5 {@include sizeh5;}
+h6 {@include sizeh6;}
+
+
+// TYPOGRAPHIC ELEMENTS
+p {margin: 0 0 ($base-line-height);}
+
+a {
+  color: $base-link-color;
+  text-decoration: none;
+  border-bottom: 1px dashed $base-accent-color;
+
+  &:hover {
+    color: $hover-link-color;
+    border-bottom-style: solid;
+  }
+
+  &:active, &:focus {
+    color: $hover-link-color;
+    outline: none;
+    border-bottom: none;
+  }
+}
+
+pre{white-space:initial;}
+
+// code, .tags{
+//   @include baseText;
+//   @include boldText;
+//   @include box;}
+//
+// blockquote {
+//   @include lightText;
+//   border-left: $base-border-width solid $base-border-color;
+//   margin: $base-font-size 0;
+//   padding-left: $base-font-size / 2;
+//
+// 	@media screen and (max-width: 640px) {
+//     margin: $base-mobile-font-size 0;
+//     padding-left: $base-mobile-font-size / 2;
+// 	}
+// }
+//
+// cite {
+//   @include lighterText;
+//   font-style: italic;
+//
+//   &:before {
+//     content: '\2014 \00A0';
+//   }
+// }
+//
+// hr {
+//   border-bottom: $base-border-width solid $base-border-color;
+//   border-left: none;
+//   border-right: none;
+//   border-top: none;
+//   margin: $base-font-size * 2 0;
+//
+// 	@media screen and (max-width: 640px) {
+//     margin:$base-mobile-font-size * 2 0;
+// 	}
+// }
+
+
+// CUSTOM CLASSES
+// enables white text on coloured backgrounds
+// fixes button on background panels
+.plainText{
+    color: $base-font-color;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $unitless-line-height;
+    border:none;
+  &:hover, &:active, &:focus{
+    color: $base-font-color;
+    border: none;}
+	@media screen and (max-width: 640px) {
+      font-size: $base-mobile-font-size;
+      line-height: $unitless-mobile-line-height;}
+}
+
+// underlined type, good for headers and titles
+// .typeText{
+//   @include smallText;
+//   @include boldText;
+//   text-transform: uppercase;
+//   border-bottom: 1px solid $base-font-color;
+//   display: inline-block;}
+//
+// // lighter subtitle that will sit under h1
+// .subtitle{
+//   @include biggerText;
+//   @include lightText;
+//   margin-top:0px;
+//   margin-bottom:  $base-font-size * 1.618;}
+
+// more stuff
+.roundText{@include roundText;}
+.boldText{@include boldText;}
+.lightText{@include lightText;}
+.lighterText{@include lighterText;}
+
+// for larger font size
+.bigText{@include bigText;}
+.biggerText{@include biggerText;}
+
+// for smaller font size
+.smallText{@include smallText;}
+
+// ALIGNMENT
+.centerText{@include centerText;}
+.rightText{@include rightText;}
+.leftText{@include leftText;}
+.justifyText{@include justifyText;}
+.centerTextMobile{@include centerTextMobile;}
+
+.floatLeft{float:left;}
+.floatRight{float:right;}
+
+.noUnderline{text-decoration:none !important;}
+.noBorder{border:none !important;}
+.noLineHeight{line-height:initial !important;}
+
+.darkText{
+  color:$slate;
+  a{
+    color:$blue;
+    border-color:$blue;}
+}

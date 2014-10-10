@@ -1,0 +1,99 @@
+/*--------------------------------*/
+/*                                */
+/*    DON'T EDIT THE CSS FOOL!    */
+/*       USE THE SCSS FILE.       */
+/*                                */
+/*This css is compiled using sass.*/
+/*Don't have the sass files? Well */
+/*talk to                         */
+/*thomas@studentcarshare.ca       */
+/*                                */
+/*--------------------------------*/
+
+// cd /Applications/MAMP/htdocs/school/nicebox
+// sass install
+// bourbon install
+// neat install
+// sass --watch sass/style.scss:css/style.css --style expanded
+// sass --watch sass/style.scss:css/style.min.css --style compressed
+// sass --watch sass directory/css directory
+
+@import "base/base.scss";
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+//RESETS
+body{margin:0px;}
+
+//GRID
+.container{@include outer-container;}
+
+// basic column
+.centerColumn{@include span-columns(8);@include shift(2);
+	@media screen and (max-width: $break-small){
+		@include span-columns(10);@include shift(1)
+	}
+}
+
+// small column
+.centerColumnSmall{@include span-columns(6);@include shift(3);
+	@media screen and (max-width: $break-small){
+		@include span-columns(10);@include shift(1)
+	}
+}
+
+.large4{@include span-columns(4);
+	@media screen and (max-width: $break-small){
+		@include shift(1);
+		@include span-columns(10);
+	}
+}
+
+.large6{@include span-columns(6);
+	@media screen and (max-width: $break-small){
+		@include span-columns(6);
+	}
+}
+
+.large8{@include span-columns(8);
+	@media screen and (max-width: $break-small){
+		@include shift(1);
+		@include span-columns(10);
+	}
+}
+
+// MENU
+.menu{
+	list-style:none;
+	margin:0px;
+	li{
+		display:inline;
+		margin-left:10px;
+	}
+}
+
+// COLOURS
+.whiteBackground{background:$light-white;}
+.darkBlue5Background{background:$dark-blue5;}
+.greyBackground{background:$white;}
+
+
+// instafeed
+div #instafeed{
+	a{border: none;
+		display: inline-block;
+		width: 20%;
+			@media screen and (max-width: $break-small){
+				width:25%;
+			}
+		}
+	img {
+		width:100%;
+		padding:5px;
+	}
+}
+
+footer a{
+	padding-right:10px;
+	text-decoration:none;
+}

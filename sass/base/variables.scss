@@ -1,0 +1,84 @@
+// import fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,300,700);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+// TYPOGRAPHY
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-round: 'Varela Round', sans-serif;
+
+// SIZES
+// desktop sizes
+$base-font-size: 1em;
+$base-line-height: $base-font-size * 1.618;
+$unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
+$header-line-height: $base-font-size * 1.3;
+$base-border-radius: 0.2em;
+$base-border-width: 4px;
+
+// mobile sizes
+$base-mobile-font-size: 0.9em;
+$base-mobile-line-height: $base-mobile-font-size * 1.618;
+$unitless-mobile-line-height: $base-mobile-line-height / ($base-mobile-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
+$header-mobile-line-height: $base-mobile-font-size * 1.3;
+
+// COLOURS
+$blue: #355581;
+$light-blue: lighten( $blue, 10% );
+$dark-blue: darken( $blue, 10% );
+$dark-blue5: darken( $blue, 5% );
+
+$sky-blue: #96ADC2;
+$light-sky-blue: lighten( $sky-blue, 10% );
+$dark-sky-blue: darken( $sky-blue, 10% );
+
+$orange: #D09464;
+$light-orange: lighten( $orange, 10% );
+$dark-orange: darken( $orange, 10% );
+
+$peach: #F0D1C0;
+$light-peach: lighten( $peach, 10% );
+$dark-peach: darken( $peach, 10% );
+
+$lighter-slate: #6C7279;
+$light-slate: #484C51;
+$slate: #36393D;
+$dark-slate: #242628;
+
+$grey: #E0E6EC;
+$light-grey: lighten( $grey, 10% );
+$dark-grey: darken( $grey, 10% );
+
+$white: #E9EDF2;
+$light-white: lighten( $white, 10% );
+$dark-white: darken( $white, 10% );
+
+// VARIABLES
+$base-background-color: $blue;
+
+// font colours
+$base-font-color: $white;
+$base-header-color: $peach;
+
+// accent colour
+$base-accent-color: $sky-blue;
+
+// link / button colours
+$base-link-color: $base-accent-color;		// link colour
+$hover-link-color: $light-sky-blue;				// hover link colour
+$base-button-color: $orange;						// button colour
+$hover-button-color: $dark-orange;			// hover button colour
+
+// border
+$base-border-color: $peach;
+$base-border-color-hover: $blue;
+$base-border-color-focus: $dark-orange;
+
+// element colours
+$base-element-background-color: $light-grey;
+
+// break-points
+$break-small: 640px;
+
+// brand-colours
+$facebook-color:#3b5998;
+$twitter-color:#55acee;

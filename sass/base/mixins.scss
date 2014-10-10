@@ -1,0 +1,173 @@
+// ELEMENTS
+@mixin border-spacing{
+  padding-top: $base-font-size /3;
+  padding-bottom: $base-font-size /3;
+  padding-left: $base-font-size /2;
+  padding-right: $base-font-size /2;
+  margin-left: $base-font-size /2;
+  margin-right: $base-font-size /2;
+  	@media screen and (max-width: 640px) {
+      padding-top: $base-mobile-font-size /3;
+      padding-left: $base-mobile-font-size /2;
+      padding-right: $base-mobile-font-size /2;
+      margin-left: $base-mobile-font-size /2;
+      margin-right: $base-mobile-font-size /2;}
+}
+
+@mixin round{
+  border-radius:$base-border-radius;}
+
+@mixin border{
+  border: $base-border-width solid $base-border-color;}
+
+// @mixin box{
+//   background:$base-element-background-color;
+//   @include border-spacing;
+// 	@include border;
+// 	@include round;}
+
+
+// TYPOGRAPHY
+@mixin sizeh1 {
+  font-size: $base-font-size * 3.272; // 16 * 3.272
+  margin-top: $base-font-size * 2;
+  margin-bottom: $base-font-size;
+	@media screen and (max-width: 640px) {
+    font-size: $base-mobile-font-size * 3.272; // 14 * 3.272
+    margin-top: $base-mobile-font-size * 2;
+    margin-bottom: $base-mobile-font-size;}
+}
+
+@mixin sizeh2 {
+  font-size: $base-font-size * 2.618; // 16 * 2.618
+  margin-top: $base-font-size * 2;
+  margin-bottom: $base-font-size;
+	@media screen and (max-width: 640px) {
+    font-size: $base-mobile-font-size * 2.618; // 14 * 2.618
+    margin-top: $base-mobile-font-size;
+    margin-bottom: $base-mobile-font-size / 2;}
+}
+
+@mixin sizeh3 {
+  font-size: $base-font-size * 2.023; // 16 * 2.023
+  margin-top: $base-font-size * 1.5;
+  margin-bottom: $base-font-size;
+	@media screen and (max-width: 640px) {
+    font-size: $base-mobile-font-size * 2.023; // 14 * 2.023
+    margin-top: $base-mobile-font-size;
+    margin-bottom: $base-mobile-font-size/3;}
+}
+
+@mixin sizeh4 {
+  font-size: $base-font-size * 1.618; // 16 * 1.618
+  margin-top: $base-font-size;
+	@media screen and (max-width: 640px) {
+    font-size: $base-mobile-font-size * 1.618; // 14 * 1.618
+    margin-top: $base-mobile-font-size;}
+}
+
+@mixin sizeh5 {
+  font-size: $base-font-size * 1.25; // 16 * 1.25
+  margin-top: $base-font-size;
+	@media screen and (max-width: 640px) {
+    font-size: $base-mobile-font-size * 1.25; // 14 * 1.25
+    margin-top: $base-mobile-font-size;
+    margin-bottom: $base-mobile-font-size/3;}
+}
+
+@mixin sizeh6 {
+  font-size: $base-font-size;
+  margin-top: $base-font-size;
+	@media screen and (max-width: 640px) {
+    font-size: $base-mobile-font-size;
+    margin-top: $base-mobile-font-size;
+    margin-bottom: $base-mobile-font-size/3;}
+}
+
+// for bigger text
+@mixin bigText{
+  font-size: $base-font-size * 1.25;
+	@media screen and (max-width: 640px) {
+      font-size: $base-mobile-font-size * 1.25;}}
+
+@mixin biggerText{
+  font-size:$base-font-size * 1.618;
+	@media screen and (max-width: 640px) {
+    font-size: $base-mobile-font-size * 1.618;}}
+
+// for smaller text
+// underlined type, good for headers and titles
+@mixin smallText{
+  font-size: $base-font-size / 1.2;
+	@media screen and (max-width: 640px) {
+    font-size: $base-mobile-font-size / 1.2;}
+}
+
+@mixin boldText{font-weight:800;}
+@mixin thinText{font-weight:100;}
+@mixin baseText{color:$base-font-color;}
+@mixin lightText{opacity:0.6;}
+@mixin lighterText{opacity:0.4;}
+@mixin roundText{font-family: $base-font-round;}
+
+
+// ALIGNMENT
+@mixin centerText{text-align:center;}
+@mixin rightText{text-align:right;}
+@mixin leftText{text-align:left;}
+@mixin justifyText{text-align:justify;}
+@mixin centerTextMobile{@media screen and (max-width: 640px) {text-align:center;}}
+
+
+// SPACING
+@mixin padding{
+	padding-top:$base-line-height * 2 !important;
+  padding-bottom:$base-line-height * 2!important;
+		@media screen and (max-width: 640px) {
+			padding-top:$base-mobile-line-height * 2!important;
+     	padding-bottom:$base-mobile-line-height * 2!important;}}
+
+@mixin padding-x2{
+	padding-top:$base-line-height * 3 !important;
+  padding-bottom:$base-line-height * 3 !important;
+		@media screen and (max-width: 640px) {
+			padding-top:$base-mobile-line-height * 3 !important;
+     	padding-bottom:$base-mobile-line-height * 3 !important;}}
+
+@mixin padding-small{
+	padding-top:$base-line-height !important;
+  padding-bottom:$base-line-height !important;
+		@media screen and (max-width: 640px) {
+			padding-top:$base-mobile-line-height !important;
+     	padding-bottom:$base-mobile-line-height !important;}}
+
+@mixin padding-bottom-x3{
+  padding-bottom:$base-line-height * 4 !important;
+		@media screen and (max-width: 640px) {
+     	padding-bottom:$base-mobile-line-height * 4 !important;}}
+
+@mixin padding-top{
+  padding-top:$base-line-height !important;
+		@media screen and (max-width: 640px) {
+     	padding-top:$base-mobile-line-height !important;}}
+
+@mixin margin{
+	margin-top:$base-line-height * 2 !important;
+  margin-bottom:$base-line-height * 2 !important;
+		@media screen and (max-width: 640px) {
+			margin-top:$base-mobile-line-height * 2 !important;
+     	margin-bottom:$base-mobile-line-height * 2 !important;}}
+
+@mixin margin-x2{
+	margin-top:$base-line-height * 3 !important;
+  margin-bottom:$base-line-height * 3 !important;
+		@media screen and (max-width: 640px) {
+			margin-top:$base-mobile-line-height * 3 !important;
+     	margin-bottom:$base-mobile-line-height * 3 !important;}}
+
+@mixin margin-small{
+	margin-top:$base-line-height !important;
+  margin-bottom:$base-line-height !important;
+		@media screen and (max-width: 640px) {
+			margin-top:$base-mobile-line-height !important;
+     	margin-bottom:$base-mobile-line-height !important;}}

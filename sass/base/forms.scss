@@ -1,0 +1,81 @@
+//FORMS
+
+textarea { resize:vertical;
+  height:140px;}
+
+select{background-color: #fff;
+&:hover{background-color:#fff;}}
+
+input[type=text], input[type=password], input[type=email], textarea, select, input[type=number]{
+  border:none;
+  @include round;
+  @include border-spacing;
+  @include border;
+  box-shadow:none;
+  outline:none;
+  width:100%;
+  &:hover{
+    background:$white;}
+  &:focus{
+    background:$white;
+    border-color:$base-border-color-focus;}
+}
+
+
+//default button will appear orange
+//use colour class to apply different colours
+.nb-button, input[type="submit"]{
+  @include border-spacing;
+  @include round;
+  font-weight:700;
+  white-space:pre;
+  font-size:$base-font-size * 1.25;
+	color:white;
+	background:$orange; //default color
+  border:none;
+  line-height: $unitless-line-height * 2;
+  &:hover{
+		color:$white;
+    background:$dark-orange;
+    border:none;}
+  &:active{
+    background:$light-orange;}
+	@media screen and (max-width: 640px) {
+    font-size:$base-mobile-font-size * 1.25;
+    line-height: $unitless-mobile-line-height * 2;
+  }
+}
+
+.bigButton{
+  border:$orange 3px solid !important;
+  &:hover{
+    border-color:$dark-orange !important;}
+  &:active{
+    border-color:$light-orange !important;}
+}
+
+.bigDarkButton{
+  border:$dark-blue 3px solid !important;
+  &:hover{
+    border-color:$blue !important;}
+  &:active{
+    border-color:$light-blue !important;}
+}
+
+.orangeButton{
+	background:$orange !important;
+	color:#fff !important;
+	&:hover{
+		background:$dark-orange !important;}
+	&:active{
+		background:$light-orange !important;}
+}
+
+.darkBlueButton{
+	background:$dark-blue !important;
+	color:#fff !important;
+	&:hover{
+		background:$blue !important;}
+	&:active{
+		background:$light-blue !important;}
+}
