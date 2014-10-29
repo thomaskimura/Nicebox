@@ -14,7 +14,7 @@
 
 			<p class="centerText" id="shareLocked">
 				<a href="#" class="nb-button  noUnderline" id="facebook-share"><i class="fa fa-facebook-square"></i> Share On Facebook</a>
-				<a href="https://twitter.com/intent/tweet?url=http://www.studentcarshare.ca/" class="nb-button noUnderline" id="twitter-share"><i class="fa fa-twitter-square"></i> Tweet This Page</a>
+				<a href="https://twitter.com/intent/tweet?url=http://www.google.com/" class="nb-button noUnderline" id="twitter-share"><i class="fa fa-twitter-square"></i> Tweet This Page</a>
       </p>
 
         <div class="none" id="shareSuccess">
