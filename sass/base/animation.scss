@@ -1,13 +1,22 @@
 .svg-container{
 	max-width:100%;
 	@media screen and (max-width: 550px){
-		height:320px;
+		height:330px;
+	}
+	@media screen and (max-width: 535px){
+		height:310px;
 	}
 	@media screen and (max-width: 500px){
 		height:290px;
 	}
+	@media screen and (max-width: 475px){
+		height:270px;
+	}
 	@media screen and (max-width: 450px){
-		height:260px;
+		height:250px;
+	}
+	@media screen and (max-width: 425px){
+		height:230px;
 	}
 }
 
