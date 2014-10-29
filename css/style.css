@@ -592,7 +592,7 @@ pre {
 }
 @media screen and (max-width: 375px) {
   .svg-container {
-    height: 190px;
+    height: 175px;
   }
 }
 
