@@ -13,14 +13,15 @@
 </div>
 
 
+
 <div class="darkBlue5Background padding">
 	<div class="container">
 
 		<div class="centerColumn">
       <h3 class="centerText ">It's Totally Awesome</h3>
-        <p class="biggerText centerText">
+        <!-- <p class="biggerText centerText">
 Nicebox offers surprise <a href="gifts.php">gifts</a>. <strong>Place an order and we send you a secret package</strong> with randomly selected items. You will receive something different with every order.
-        </p>
+        </p> -->
     </div>
 
     <div class="centerColumn">
@@ -49,32 +50,32 @@ Nicebox offers surprise <a href="gifts.php">gifts</a>. <strong>Place an order an
 </div>
 
 
-<div class="darkBlue5Background  padding">
+<div class="whiteBackground  padding darkText">
 	<div class="container">
 
 		<div class="centerColumn">
-      <h3 class="centerText ">How It Works</h3>
+      <h3 class="centerText darkText">How It Works</h3>
         <p class="biggerText centerText">
 It is pretty simple to get your very own suprise box.
         </p>
-      <img src="img/icons/Bulb@2x.png" class="padding-small">
+      <!-- <img src="img/icons/Bulb@2x.png" class="padding-small"> -->
     </div>
 
     <div class="centerColumn">
       <div class="large4">
-        <h5 class="">Pick A Box</h3>
+        <h5 class="darkText">Pick A Box</h3>
         <p class="">
   Pick a box to order. Right now we have 3 boxes avaliable, small, medium, and large. The bigger the box you pick the more you will get.
         </p>
       </div>
       <div class="large4">
-        <h5 class="">Order It</h3>
+        <h5 class="darkText">Order It</h3>
         <p class="">
   Enter in all your personal information so we know where to send your surprise. OR enter in the address of someone else you want to receive the box.
         </p>
       </div>
       <div class="large4">
-        <h5 class="">Surprise!</h3>
+        <h5 class="darkText">Surprise!</h3>
         <p class="">
   Wait a few days and then open up your box. Before you do anything else take pictures and tweet about it.
         </p>
@@ -85,12 +86,12 @@ It is pretty simple to get your very own suprise box.
 </div>
 
 
-<div class="padding  darkBlue5Background">
+<div class="padding  whiteBackground darkText">
 	<div class="container">
 
 		<div class="centerColumn">
-      <h3 class="centerText ">Extra Stuff</h3>
-      <img src="img/icons/Box1@2x.png" class="padding-small">
+      <h3 class="centerText darkText">Extra Stuff</h3>
+      <!-- <img src="img/icons/Box1@2x.png" class="padding-small"> -->
         <p class="biggerText centerText">
 Want to learn more?
         </p>
@@ -98,13 +99,13 @@ Want to learn more?
 
     <div class="centerColumn">
       <div class="large6">
-        <h5 class="">Contesting</h3>
+        <h5 class="darkText">Contesting</h3>
         <p class="">
   Check out all our social media channels to find some cool contest. You can find us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a>, and we are even on SnapChat. Follow @Nicebox!
         </p>
       </div>
       <div class="large6">
-        <h5 class="">Blog</h3>
+        <h5 class="darkText">Blog</h3>
         <p class="no-margin">
   We even have a blog. What do we blog about? Um, everything, jeez. You better start reading it. Seriously though. If you dont read it then idk.
         </p>
