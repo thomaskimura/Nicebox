@@ -555,6 +555,36 @@ pre {
 .svg-container {
   max-width: 100%;
 }
+@media screen and (max-width: 550px) {
+  .svg-container {
+    height: 330px;
+  }
+}
+@media screen and (max-width: 535px) {
+  .svg-container {
+    height: 310px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .svg-container {
+    height: 290px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .svg-container {
+    height: 270px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .svg-container {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .svg-container {
+    height: 230px;
+  }
+}
 
 svg {
   max-width: 100%;
@@ -573,6 +603,7 @@ svg {
     position: relative;
     left: -25%;
     width: 150%;
+    top: -50px;
   }
 }
 
