@@ -560,12 +560,12 @@ pre {
     height: 330px;
   }
 }
-@media screen and (max-width: 535px) {
+@media screen and (max-width: 525px) {
   .svg-container {
     height: 310px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 499px) {
   .svg-container {
     height: 290px;
   }
@@ -583,6 +583,16 @@ pre {
 @media screen and (max-width: 425px) {
   .svg-container {
     height: 230px;
+  }
+}
+@media screen and (max-width: 399px) {
+  .svg-container {
+    height: 210px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .svg-container {
+    height: 190px;
   }
 }
 
