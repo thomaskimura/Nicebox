@@ -555,7 +555,17 @@ pre {
 .svg-container {
   max-width: 100%;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 550px) {
+  .svg-container {
+    height: 320px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .svg-container {
+    height: 290px;
+  }
+}
+@media screen and (max-width: 450px) {
   .svg-container {
     height: 260px;
   }
@@ -566,10 +576,19 @@ svg {
 }
 @media screen and (max-width: 640px) {
   svg {
+    max-width: none;
     position: relative;
+    left: -10%;
+    width: 120%;
+  }
+}
+@media screen and (max-width: 550px) {
+  svg {
+    max-width: none;
+    position: relative;
+    left: -25%;
+    width: 150%;
     top: -50px;
-    left: -30%;
-    max-width: 160%;
   }
 }
 

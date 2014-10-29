@@ -1,6 +1,12 @@
 .svg-container{
 	max-width:100%;
-	@media screen and (max-width: $break-small){
+	@media screen and (max-width: 550px){
+		height:320px;
+	}
+	@media screen and (max-width: 500px){
+		height:290px;
+	}
+	@media screen and (max-width: 450px){
 		height:260px;
 	}
 }
@@ -8,10 +14,17 @@
 svg{
 	max-width:100%;
 	@media screen and (max-width: $break-small){
+		max-width:none;
 		position:relative;
+		left:-10%;
+		width:120%;
+	}
+	@media screen and (max-width: 550px){
+		max-width:none;
+		position:relative;
+		left:-25%;
+		width:150%;
 		top:-50px;
-		left:-30%;
-		max-width:160%;
 	}
 }
 
