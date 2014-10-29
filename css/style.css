@@ -554,6 +554,7 @@ pre {
 
 .svg-container {
   max-width: 100%;
+  overflow: hidden;
 }
 @media screen and (max-width: 550px) {
   .svg-container {
