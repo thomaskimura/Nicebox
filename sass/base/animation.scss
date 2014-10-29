@@ -2,6 +2,8 @@
 	max-width:100%;
 	@media screen and (max-width: 550px){
 		height:330px;
+		position:relative;
+		top:-50px;
 	}
 	@media screen and (max-width: 525px){
 		height:310px;
@@ -24,9 +26,6 @@
 	@media screen and (max-width: 375px){
 		height:175px;
 	}
-	@media screen and (max-width: 350px){
-		height:150px;
-	}
 }
 
 svg{
@@ -39,10 +38,8 @@ svg{
 	}
 	@media screen and (max-width: 550px){
 		max-width:none;
-		position:relative;
 		left:-25%;
 		width:150%;
-		top:-50px;
 	}
 }
 
