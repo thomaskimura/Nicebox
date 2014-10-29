@@ -47,8 +47,8 @@ else{ }
 
 	<div class="container padding-bottom-x3">
 		<div class="centerColumn">
-      <h1 class="centerText"><i class="fa fa-paper-plane"></i> Say Hello</h1>
-			<p class="centerText bigText">We love hearing from you. You are always welcome to join us online through our <a href="#"><i class="fa fa-facebook"></i> Facebook</a>, <a href="#"><i class="fa fa-twitter"></i> Twitter</a>, <a href="#"><i class="fa fa-instagram"></i> Instagram</a>. Or, you can just use the below form to send a direct email to info@nicebox.co</p>
+      <h1 class="centerText">Say Hello</h1>
+			<p class="centerText bigText">We love hearing from you. You are always welcome to join us online through our <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a>. Or, you can just use the below form to send a direct email to info@nicebox.co</p>
 
       <p class="centerText bigText"><?php if ($check == "sent"){echo 'Message has been sent.';}?></p>
 
