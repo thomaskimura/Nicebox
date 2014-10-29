@@ -1,8 +1,17 @@
-.svg-container{max-width:100%;}
+.svg-container{
+	max-width:100%;
+	@media screen and (max-width: $break-small){
+		height:260px;
+	}
+}
+
 svg{
 	max-width:100%;
 	@media screen and (max-width: $break-small){
-		height:150px;
+		position:relative;
+		top:-50px;
+		left:-30%;
+		max-width:160%;
 	}
 }
 

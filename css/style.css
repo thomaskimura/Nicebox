@@ -555,13 +555,21 @@ pre {
 .svg-container {
   max-width: 100%;
 }
+@media screen and (max-width: 640px) {
+  .svg-container {
+    height: 260px;
+  }
+}
 
 svg {
   max-width: 100%;
 }
 @media screen and (max-width: 640px) {
   svg {
-    height: 150px;
+    position: relative;
+    top: -50px;
+    left: -30%;
+    max-width: 160%;
   }
 }
 
