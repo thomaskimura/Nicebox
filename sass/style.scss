@@ -10,8 +10,8 @@
 /*                                */
 /*--------------------------------*/
 
-// cd /Applications/MAMP/htdocs/school/nicebox
-// sass install
+// cd /Applications/MAMP/htdocs/school/nicebox2
+// sass installfadsdsfasdfa
 // bourbon install
 // neat install
 // sass --watch sass/style.scss:css/style.css --style expanded
@@ -51,7 +51,8 @@ body{margin:0px;}
 
 .large6{@include span-columns(6);
 	@media screen and (max-width: $break-small){
-		@include span-columns(6);
+		@include shift(1);
+		@include span-columns(10);
 	}
 }
 
@@ -62,21 +63,26 @@ body{margin:0px;}
 	}
 }
 
+.small4{@include span-columns(4);}
+.small8{@include span-columns(8);}
+
+
 // MENU
 .menu{
 	list-style:none;
 	margin:0px;
 	li{
 		display:inline;
-		margin-left:10px;
-	}
+		margin-left:10px;}
 }
+
 
 // COLOURS
 .whiteBackground{background:$light-white;}
 .darkBlue5Background{background:$dark-blue5;}
 .greyBackground{background:$white;}
-
+.animateBackground{background-image: url('../img/background.gif');
+}
 
 // instafeed
 div #instafeed{
@@ -87,13 +93,11 @@ div #instafeed{
 				width:25%;
 			}
 		}
-	img {
+	img{
 		width:100%;
-		padding:5px;
-	}
+		padding:5px;}
 }
 
 footer a{
 	padding-right:10px;
-	text-decoration:none;
-}
+	text-decoration:none;}
