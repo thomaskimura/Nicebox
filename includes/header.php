@@ -7,8 +7,7 @@
   <meta http-equiv="Cache-control" content="public">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/animations.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
