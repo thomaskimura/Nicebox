@@ -2,41 +2,144 @@
 <html>
 
 <head>
-  <title>Nicebox</title>
+  <title><?php echo $page_title; ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta http-equiv="Cache-control" content="public">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/animations.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
 
 <div class="container padding-small">
 	<div class="centerColumn">
-		<h2 class="plainText floatLeft no-margin"><a class="plainText" href="index.html"><i class="fa fa-gift"></i> Nicebox</a></h2>
+		<h2 class="plainText floatLeft no-margin"><a class="plainText" href="index.php"><i class="fa fa-gift"></i> Nicebox</a></h2>
 		<ul class="menu floatRight">
-			<li><a href="about.html" class=" noBorder">About</a></li>
-			<li><a href="contact.html" class=" noBorder">Contact</a></li>
+			<li><a href="about.php" class=" noBorder">About</a></li>
+			<li><a href="contact.php" class=" noBorder">Contact</a></li>
 		</ul>
 	</div>
 </div>
+
 
 <!--END HEADER-->
 
 
 	<div class="container padding-bottom-x3">
 		<div class="centerColumn">
-      <p class="smallText centerText lightText">This site is a demo</p>
-			<img src="img/nicebox.png" class="padding-x2 floating" width="30%">
-			<p class="centerText bigText">Nicebox offers surprise <a href="gifts.html">gifts</a>. <strong>Place an order and we send you a secret package</strong> with randomly selected items. You will receive something different with every order. The bigger the box, the bigger the surprise. <a href="about.html" class="smallText">Read more <i class="fa fa-long-arrow-right"></i></a></p>
+      <div class="svg-container">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="717px" viewBox="0 0 717 400" enable-background="new 0 0 717 400" xml:space="preserve">
+
+          <g class="floating" id="Box">
+          	<g>
+          		<g>
+          			<path fill="#6EA1E0" d="M326.401,189.381c-11.994-6.812-25.441-5.783-30.035,2.301c-4.592,8.083,1.408,20.162,13.402,26.977
+          				s28.119,1.066,30.033-2.301C342.026,212.439,338.394,196.195,326.401,189.381z M328.251,209.516
+          				c-0.738,0.609-3.807,1.949-7.613,1.949c-2.348,0-4.42-0.502-6.162-1.492c-2.844-1.615-5.168-3.938-6.379-6.371
+          				c-0.615-1.243-1.48-3.625-0.338-5.633c0.947-1.667,3.088-2.624,5.877-2.624c2.525,0,5.322,0.798,7.873,2.247
+          				C327.077,200.755,328.626,207.977,328.251,209.516z"/>
+          			<path fill="#3B6EAD" d="M327.636,187.207c-5.486-3.115-11.586-4.831-17.178-4.831c-7.422,0-13.352,2.941-16.266,8.071
+          				c-5.266,9.269,1.168,22.23,14.34,29.714c4.098,2.328,8.867,2.839,14.18,2.839c0,0,0,0,0.002,0c8.217,0,17.219-2.483,19.262-6.078
+          				C345.118,211.387,340.466,194.497,327.636,187.207z M337.638,214.436c-0.832,1.229-7.094,3.564-14.924,3.564h-0.002
+          				c-4.436,0-8.375-0.292-11.709-2.186c-10.594-6.018-16.301-16.477-12.463-23.234c2.002-3.521,6.346-5.373,11.918-5.373
+          				c4.74,0,9.963,1.233,14.707,3.928C336.163,197.384,339.06,211.93,337.638,214.436z"/>
+          		</g>
+          		<g>
+          			<path fill="#6EA1E0" d="M377.2,216.375c1.914,3.367,18.039,9.115,30.033,2.301c11.992-6.814,17.992-18.893,13.4-26.978
+          				c-4.594-8.085-18.039-9.113-30.033-2.301C378.606,196.212,374.976,212.457,377.2,216.375z M395.491,197.608
+          				c2.553-1.449,5.348-2.248,7.873-2.248c2.789,0,4.932,0.956,5.879,2.624c1.141,2.008,0.275,4.39-0.34,5.633
+          				c-1.209,2.436-3.533,4.758-6.377,6.373c-1.742,0.99-3.816,1.492-6.164,1.492c-3.805,0-6.875-1.34-7.613-1.949
+          				C388.374,207.994,389.925,200.771,395.491,197.608z"/>
+          			<path fill="#3B6EAD" d="M375.026,216.93c2.043,3.595,11.043,6.07,19.26,6.07c0.002,0,0.002,0,0.002,0
+          				c5.312,0,10.084-0.503,14.18-2.831c13.172-7.483,19.605-20.742,14.34-30.011c-2.914-5.13-8.842-7.919-16.266-7.919
+          				c-5.59,0-11.691,1.487-17.178,4.603C376.534,194.132,371.882,211.395,375.026,216.93z M391.835,191.528
+          				c4.744-2.695,9.969-4.153,14.707-4.153c5.574,0,9.918,2.002,11.918,5.523c3.838,6.757-1.869,16.906-12.463,22.924
+          				c-3.334,1.894-7.273,2.178-11.709,2.178c0,0,0,0-0.002,0c-7.83,0-14.09-2.328-14.924-3.557
+          				C377.94,211.938,380.839,197.777,391.835,191.528z"/>
+          		</g>
+          	</g>
+          	<path fill="#6EA1E0" stroke="#3B6EAD" stroke-width="5" stroke-miterlimit="10" d="M374.76,219.33
+          		c-5.071,5.793-26.575,5.266-32.281,0c-2.853-2.633-2.853-12.264,0-14.896c5.706-5.266,27.209-5.793,32.281,0
+          		C377.295,207.33,377.295,216.433,374.76,219.33z"/>
+          	<g>
+          		<path fill="#4A8AD8" d="M435.5,217.655c0-2.571-2.084-4.655-4.655-4.655H286.155c-2.571,0-4.655,2.084-4.655,4.655v144.689
+          			c0,2.571,2.084,4.655,4.655,4.655h144.689c2.571,0,4.655-2.084,4.655-4.655V217.655z"/>
+          	</g>
+          	<rect x="341" y="245.5" fill="#6EA1E0" stroke="#3B6EAD" stroke-width="5" stroke-miterlimit="10" width="35" height="122"/>
+          	<g>
+          		<g>
+          			<path fill="#3B6EAD" d="M337.264,301c1.361,9,10.198,18.551,21.236,18.551c11.034,0,19.873-9.551,21.237-18.551H337.264z"/>
+          		</g>
+          		<path fill="#355581" d="M358.5,321.826c-12.355,0-22.033-9.411-22.033-21.767c0-1.285,1.042-2.06,2.328-2.06h39.411
+          			c1.285,0,2.327,0.774,2.327,2.06C380.533,312.415,370.854,321.826,358.5,321.826z M341.27,303c1.104,8,8.274,15.052,17.23,15.052
+          			c8.953,0,16.125-7.052,17.231-15.052H341.27z"/>
+          	</g>
+          	<g>
+          		<g>
+          			<circle fill="#355581" cx="392.016" cy="290.871" r="5.354"/>
+          		</g>
+          		<g>
+          			<circle fill="#355581" cx="324.984" cy="290.871" r="5.354"/>
+          		</g>
+          	</g>
+          	<rect x="341" y="214.5" fill="#6EA1E0" stroke="#3B6EAD" stroke-width="5" stroke-miterlimit="10" width="35" height="31"/>
+          	<rect x="281.5" y="247" opacity="0.2" fill="#3B6EAD" width="154" height="9"/>
+          	<line fill="none" stroke="#3B6EAD" stroke-width="5" stroke-miterlimit="10" x1="434.5" y1="245.5" x2="281.5" y2="245.5"/>
+          	<g>
+          		<path fill="none" stroke="#3B6EAD" stroke-width="5" stroke-miterlimit="10" d="M435,218.154c0-2.57-2.084-4.654-4.655-4.654
+          			H285.655c-2.571,0-4.655,2.084-4.655,4.654v144.691c0,2.57,2.084,4.654,4.655,4.654h144.689c2.571,0,4.655-2.084,4.655-4.654
+          			V218.154z"/>
+          	</g>
+          	<g>
+          		<circle fill="#6EA1E0" cx="397.602" cy="309.268" r="7.302"/>
+          		<circle fill="#6EA1E0" cx="319.398" cy="309.268" r="7.302"/>
+          	</g>
+          </g>
+
+          <path class="fade5" id="X3" fill="#6EA1E0" d="M612.269,97.713l-2.5-2.499l2.5-2.5c1.381-1.381,1.381-3.62,0-5s-3.619-1.381-5,0l-2.5,2.5l-2.5-2.5
+          	c-1.381-1.381-3.619-1.381-5,0s-1.381,3.619,0,5l2.5,2.5l-2.5,2.499c-1.381,1.382-1.381,3.621,0,5.001c1.381,1.379,3.619,1.381,5,0
+          	l2.5-2.5l2.5,2.5c1.381,1.381,3.619,1.381,5,0S613.649,99.095,612.269,97.713z"/>
+          <path class="fade3" id="X2" fill="#E9EDF2" d="M408.051,141.713l-2.5-2.499l2.5-2.5c1.381-1.381,1.381-3.62,0-5s-3.619-1.381-5.001,0l-2.499,2.5
+          	l-2.499-2.5c-1.382-1.381-3.62-1.381-5.001,0s-1.381,3.619,0,5l2.5,2.5l-2.5,2.499c-1.381,1.382-1.38,3.62,0,5.001
+          	c1.381,1.38,3.619,1.381,5.001,0l2.499-2.5l2.499,2.5c1.382,1.381,3.62,1.381,5.001,0S409.432,143.095,408.051,141.713z"/>
+          <path class="fade4" id="X1" fill="#F0D1C0" d="M173.894,102.616l-2.5-2.499l2.5-2.5c1.381-1.381,1.381-3.62,0-5s-3.619-1.381-5,0l-2.5,2.5
+          	l-2.5-2.5c-1.381-1.381-3.62-1.381-5,0s-1.381,3.619,0,5l2.5,2.5l-2.5,2.499c-1.381,1.382-1.38,3.621,0,5.001
+          	c1.381,1.379,3.619,1.381,5,0l2.5-2.5l2.5,2.5c1.381,1.381,3.62,1.381,5,0S175.275,103.998,173.894,102.616z"/>
+
+          <path class="fade4" id="Cross3" fill="#40669A" d="M549.007,226.464h-3.535v-3.535c0-1.953-1.584-3.535-3.536-3.535s-3.536,1.582-3.536,3.535
+          	v3.535h-3.535c-1.953,0-3.535,1.583-3.535,3.536s1.582,3.535,3.535,3.535h3.535v3.535c0,1.953,1.584,3.536,3.536,3.536
+          	s3.536-1.583,3.536-3.536v-3.535h3.535c1.953,0,3.535-1.582,3.535-3.535S550.96,226.464,549.007,226.464z"/>
+          <path class="fade3" id="Cross2" fill="#3B6EAD" d="M515.497,91.678h-3.535v-3.535c0-1.953-1.584-3.536-3.536-3.536s-3.536,1.583-3.536,3.536v3.535
+          	h-3.535c-1.953,0-3.535,1.583-3.535,3.536s1.582,3.535,3.535,3.535h3.535v3.535c0,1.953,1.584,3.536,3.536,3.536
+          	s3.536-1.583,3.536-3.536v-3.535h3.535c1.953,0,3.535-1.582,3.535-3.535S517.45,91.678,515.497,91.678z"/>
+          <path class="fade5" id="Cross1" fill="#6EA1E0" d="M312.5,105.117h-3.535v-3.535c0-1.953-1.583-3.536-3.536-3.536s-3.536,1.583-3.536,3.536v3.535
+          	h-3.535c-1.953,0-3.536,1.583-3.536,3.536s1.583,3.535,3.536,3.535h3.535v3.535c0,1.953,1.583,3.536,3.536,3.536
+          	s3.536-1.583,3.536-3.536v-3.535h3.535c1.954,0,3.536-1.582,3.536-3.535S314.454,105.117,312.5,105.117z"/>
+
+          <rect class="fade4" id="Diamond3" x="462.5" y="144" transform="matrix(0.7071 0.7071 -0.7071 0.7071 244.7865 -287.9669)" fill="#F0D1C0" width="15" height="15"/>
+          <rect class="fade3" id="Diamond2" x="403.5" y="79" transform="matrix(0.7071 0.7071 -0.7071 0.7071 181.5439 -265.2856)" fill="#40669A" width="15" height="15"/>
+          <rect class="fade4" id="Diamond1" x="169.5" y="196" transform="matrix(0.7071 0.7071 -0.7071 0.7071 195.7383 -65.5541)" fill="#6EA1E0" width="15" height="15"/>
+
+          <circle class="fade5" id="Circle8" fill="#E9EDF2" cx="629" cy="147.75" r="5"/>
+          <circle class="fade4" id="Circle7" fill="#3B6EAD" cx="464" cy="38.75" r="5"/>
+          <circle class="fade5" id="Circle6" fill="#6EA1E0" cx="398" cy="29.208" r="9.542"/>
+          <circle class="fade3" id="Circle5" fill="#2A4468" cx="365" cy="166.75" r="5"/>
+          <circle class="fade4" id="Circle4" fill="#EDC8B3" cx="270" cy="179.75" r="5"/>
+          <circle class="fade3" id="Circle3" fill="#2A4468" cx="256" cy="33.75" r="5"/>
+          <circle class="fade5" id="Circle2" fill="#E0E6EC" cx="235" cy="135.208" r="9.542"/>
+          <circle class="fade5" id="Circle1" fill="#40669A" cx="65" cy="108.75" r="5"/>
+
+        </svg>
+      </div>
+
+      <p class="centerText bigText">Nicebox offers surprise <a href="gifts.php">gifts</a>. <strong>Place an order and we send you a secret package</strong> with randomly selected items. You will receive something different with every order. The bigger the box, the bigger the surprise. <a href="about.php" class="smallText">Read more <i class="fa fa-long-arrow-right"></i></a></p>
 			<p class="centerText">
-				<a href="checkout5.html" class="nb-button bigButton noUnderline">$5 Small Box</a>
-				<a href="checkout10.html" class="nb-button bigButton noUnderline">$10 Medium Box</a>
-				<a href="checkout20.html" class="nb-button bigButton noUnderline">$20 Large Box</a>
+				<a href="checkout5.php" class="nb-button bigButton noUnderline">Small Box</a>
+				<a href="checkout10.php" class="nb-button bigButton noUnderline">Medium Box</a>
+				<a href="checkout20.php" class="nb-button bigButton noUnderline">Large Box</a>
 			</p>
-			<p class="smallText centerText"><a href="3deal.html">Get a box for just $3 <i class="fa fa-long-arrow-right"></i></a></p>
+			<p class="smallText centerText"><a href="3deal.php">Get a box for just $3 <i class="fa fa-long-arrow-right"></i></a></p>
 		</div>
 	</div>
 
