@@ -559,6 +559,11 @@ pre {
 svg {
   max-width: 100%;
 }
+@media screen and (max-width: 640px) {
+  svg {
+    height: 150px;
+  }
+}
 
 .floating {
   animation-name: floating;
