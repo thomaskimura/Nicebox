@@ -10,14 +10,14 @@
 /*                                */
 /*--------------------------------*/
 
-// cd /Applications/MAMP/htdocs/school/nicebox2
+// cd /Applications/MAMP/htdocs/school/nicebox
 // sass installfadsdsfasdfa
 // bourbon install
 // neat install
 // sass --watch sass/style.scss:css/style.css --style expanded
 // sass --watch sass/style.scss:css/style.min.css --style compressed
 // sass --watch sass directory/css directory
- 
+
 @import "base/base.scss";
 @import 'bourbon/bourbon';
 @import 'neat/neat';
@@ -101,3 +101,7 @@ div #instafeed{
 footer a{
 	padding-right:10px;
 	text-decoration:none;}
+
+@media screen and (max-width: $break-small){
+  .hideOnSmall{display:none;}
+}

@@ -558,44 +558,43 @@ pre {
 }
 @media screen and (max-width: 550px) {
   .svg-container {
-    height: 330px;
+    height: 400px;
     position: relative;
-    top: -50px;
   }
 }
 @media screen and (max-width: 525px) {
   .svg-container {
-    height: 310px;
+    height: 400px;
   }
 }
 @media screen and (max-width: 499px) {
   .svg-container {
-    height: 290px;
+    height: 375px;
   }
 }
 @media screen and (max-width: 475px) {
   .svg-container {
-    height: 270px;
+    height: 350px;
   }
 }
 @media screen and (max-width: 450px) {
   .svg-container {
-    height: 250px;
+    height: 325px;
   }
 }
 @media screen and (max-width: 425px) {
   .svg-container {
-    height: 230px;
+    height: 300px;
   }
 }
 @media screen and (max-width: 399px) {
   .svg-container {
-    height: 210px;
+    height: 275px;
   }
 }
 @media screen and (max-width: 375px) {
   .svg-container {
-    height: 175px;
+    height: 250px;
   }
 }
 
@@ -1007,4 +1006,10 @@ div #instafeed img {
 footer a {
   padding-right: 10px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 640px) {
+  .hideOnSmall {
+    display: none;
+  }
 }
