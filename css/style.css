@@ -554,10 +554,67 @@ pre {
 
 .svg-container {
   max-width: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width: 550px) {
+  .svg-container {
+    height: 400px;
+    position: relative;
+  }
+}
+@media screen and (max-width: 525px) {
+  .svg-container {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .svg-container {
+    height: 375px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .svg-container {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .svg-container {
+    height: 325px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .svg-container {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 399px) {
+  .svg-container {
+    height: 275px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .svg-container {
+    height: 250px;
+  }
 }
 
 svg {
   max-width: 100%;
+}
+@media screen and (max-width: 640px) {
+  svg {
+    max-width: none;
+    position: relative;
+    left: -10%;
+    width: 120%;
+  }
+}
+@media screen and (max-width: 550px) {
+  svg {
+    max-width: none;
+    left: -25%;
+    width: 150%;
+  }
 }
 
 .floating {
@@ -906,15 +963,6 @@ body {
   margin-right: 0;
 }
 
-.menu {
-  list-style: none;
-  margin: 0px;
-}
-.menu li {
-  display: inline;
-  margin-left: 10px;
-}
-
 .whiteBackground {
   background: white;
 }
@@ -929,6 +977,15 @@ body {
 
 .animateBackground {
   background-image: url("../img/background.gif");
+}
+
+.menu {
+  list-style: none;
+  margin: 0px;
+}
+.menu li {
+  display: inline;
+  margin-left: 10px;
 }
 
 div #instafeed a {
@@ -949,4 +1006,10 @@ div #instafeed img {
 footer a {
   padding-right: 10px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 640px) {
+  .hideOnSmall {
+    display: none;
+  }
 }

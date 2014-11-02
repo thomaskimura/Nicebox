@@ -1,3 +1,7 @@
+// re-organize css sheets 	[]
+// use bourbon    					[]
+// remove duplicate styles 	[]
+
 /*--------------------------------*/
 /*                                */
 /*    DON'T EDIT THE CSS FOOL!    */
@@ -10,7 +14,7 @@
 /*                                */
 /*--------------------------------*/
 
-// cd /Applications/MAMP/htdocs/school/nicebox2
+// cd /Applications/MAMP/htdocs/school/nicebox
 // sass installfadsdsfasdfa
 // bourbon install
 // neat install
@@ -22,10 +26,12 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
-//RESETS
+
+// RESETS
 body{margin:0px;}
 
-//GRID
+
+// GRID
 .container{@include outer-container;}
 
 // basic column
@@ -67,6 +73,14 @@ body{margin:0px;}
 .small8{@include span-columns(8);}
 
 
+// COLOURS
+.whiteBackground{background:$light-white;}
+.darkBlue5Background{background:$dark-blue5;}
+.greyBackground{background:$white;}
+.animateBackground{background-image: url('../img/background.gif');
+}
+
+
 // MENU
 .menu{
 	list-style:none;
@@ -76,13 +90,6 @@ body{margin:0px;}
 		margin-left:10px;}
 }
 
-
-// COLOURS
-.whiteBackground{background:$light-white;}
-.darkBlue5Background{background:$dark-blue5;}
-.greyBackground{background:$white;}
-.animateBackground{background-image: url('../img/background.gif');
-}
 
 // instafeed
 div #instafeed{
@@ -98,6 +105,14 @@ div #instafeed{
 		padding:5px;}
 }
 
+
+// footer
 footer a{
 	padding-right:10px;
 	text-decoration:none;}
+
+
+// hide
+@media screen and (max-width: $break-small){
+  .hideOnSmall{display:none;}
+}
