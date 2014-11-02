@@ -2,30 +2,29 @@
 	max-width:100%;
 	overflow:hidden;
 	@media screen and (max-width: 550px){
-		height:330px;
+		height:400px;
 		position:relative;
-		top:-50px;
 	}
 	@media screen and (max-width: 525px){
-		height:310px;
+		height:400px;
 	}
 	@media screen and (max-width: 499px){
-		height:290px;
+		height:375px;
 	}
 	@media screen and (max-width: 475px){
-		height:270px;
+		height:350px;
 	}
 	@media screen and (max-width: 450px){
-		height:250px;
+		height:325px;
 	}
 	@media screen and (max-width: 425px){
-		height:230px;
+		height:300px;
 	}
 	@media screen and (max-width: 399px){
-		height:210px;
+		height:275px;
 	}
 	@media screen and (max-width: 375px){
-		height:175px;
+		height:250px;
 	}
 }
 
