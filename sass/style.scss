@@ -1,5 +1,5 @@
 // re-organize css sheets 	[]
-// use bourbon    					[]
+// use bourbon    			[]
 // remove duplicate styles 	[]
 
 /*--------------------------------*/
@@ -71,6 +71,13 @@ body{margin:0px;}
 
 .small4{@include span-columns(4);}
 .small8{@include span-columns(8);}
+
+
+.large6small12{@include span-columns(6);
+	@media screen and (max-width: $break-small){
+		@include span-columns(12);
+	}
+}
 
 
 // COLOURS

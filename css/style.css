@@ -228,6 +228,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, tex
 }
 
 .nb-button, input[type="submit"] {
+  cursor: pointer;
   padding-top: 0.33333em;
   padding-bottom: 0.33333em;
   padding-left: 0.5em;
@@ -307,6 +308,46 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, tex
 }
 .darkBlueButton:active {
   background: #446da5 !important;
+}
+
+button {
+  cursor: pointer;
+  padding-top: 0.33333em;
+  padding-bottom: 0.33333em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border-radius: 0.2em;
+  font-weight: 700;
+  white-space: pre;
+  font-size: 1.25em;
+  color: white;
+  background: #d09464;
+  border: none;
+}
+@media screen and (max-width: 640px) {
+  button {
+    padding-top: 0.3em;
+    padding-left: 0.45em;
+    padding-right: 0.45em;
+    margin-left: 0.45em;
+    margin-right: 0.45em;
+  }
+}
+button:hover {
+  color: #e9edf2;
+  background: #c4793d;
+  border: none;
+}
+button:active {
+  background: #dcaf8b;
+}
+@media screen and (max-width: 640px) {
+  button {
+    font-size: 1.125em;
+    line-height: 2.9124;
+  }
 }
 
 body {
@@ -961,6 +1002,27 @@ body {
 }
 .small8:last-child {
   margin-right: 0;
+}
+
+.large6small12 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+.large6small12:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 640px) {
+  .large6small12 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .large6small12:last-child {
+    margin-right: 0;
+  }
 }
 
 .whiteBackground {
