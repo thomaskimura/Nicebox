@@ -1,5 +1,4 @@
 //FORMS
-
 textarea { resize:vertical;
   height:140px;}
 
@@ -21,10 +20,10 @@ input[type=text], input[type=password], input[type=email], textarea, select, inp
     border-color:$base-border-color-focus;}
 }
 
-
 //default button will appear orange
 //use colour class to apply different colours
 .nb-button, input[type="submit"]{
+  cursor:pointer;
   @include border-spacing;
   @include round;
   font-weight:700;
@@ -78,4 +77,26 @@ input[type=text], input[type=password], input[type=email], textarea, select, inp
 		background:$blue !important;}
 	&:active{
 		background:$light-blue !important;}
+}
+
+button{
+  cursor:pointer;
+  @include border-spacing;
+  @include round;
+  font-weight:700;
+  white-space:pre;
+  font-size:$base-font-size * 1.25;
+  color:white;
+  background:$orange; //default color
+  border:none;
+  &:hover{
+    color:$white;
+    background:$dark-orange;
+    border:none;}
+  &:active{
+    background:$light-orange;}
+  @media screen and (max-width: 640px) {
+    font-size:$base-mobile-font-size * 1.25;
+    line-height: $unitless-mobile-line-height * 2;
+  }
 }
