@@ -18,27 +18,24 @@
 	<div class="container">
 
 		<div class="centerColumn">
-      <h3 class="centerText ">It's Totally Awesome</h3>
-        <!-- <p class="biggerText centerText">
-Nicebox offers surprise <a href="gifts.php">gifts</a>. <strong>Place an order and we send you a secret package</strong> with randomly selected items. You will receive something different with every order.
-        </p> -->
+      <h3 class="centerText roundText">It's Totally Awesome</h3>
     </div>
 
     <div class="centerColumn">
       <div class="large4">
-        <h5 class=""><i class="fa fa-trophy"></i> Awesome Prizing</h3>
+        <h5 class=""><i class="twa twa-trophy"></i> Awesome Prizing</h3>
         <p class="">
   When you order a box we send you a surprise. The really cool part is sometimes you get something worth a lot more then you paid. We even give away iPhones. <a href="gifts.php">Visit Gallery</a> of past boxes.
         </p>
       </div>
       <div class="large4">
-        <h5 class=""><i class="fa fa-birthday-cake"></i> Always A Surprise</h3>
+        <h5 class=""><i class="twa twa-tada"></i> Always A Surprise</h3>
         <p class="">
   No box is the same. Every package we send out is different. Which means everytime you order you will get a new supriese.
         </p>
       </div>
       <div class="large4">
-        <h5 class=""><i class="fa fa-thumbs-up"></i> The Perfect Gift</h3>
+        <h5 class=""><i class="twa twa-santa"></i> The Perfect Gift</h3>
         <p class="">
   Can't decide on a gift to get that special someone. Well just get them a surprise. We can even wrap it for you, so you don't have to do any hard work.
         </p>
@@ -54,9 +51,10 @@ Nicebox offers surprise <a href="gifts.php">gifts</a>. <strong>Place an order an
 	<div class="container">
 
 		<div class="centerColumn">
-      <h3 class="centerText darkText">How It Works</h3>
+      <h3 class="centerText darkText roundText">How It Works</h3>
         <p class="biggerText centerText">
-It is pretty simple to get your very own suprise box.
+          It is pretty simple to get your very own suprise box. <i class="twa twa-raised-hands"></i>
+          <img class="padding-small" src="img/icons/Box1@2x.png">
         </p>
       <!-- <img src="img/icons/Bulb@2x.png" class="padding-small"> -->
     </div>
@@ -71,13 +69,13 @@ It is pretty simple to get your very own suprise box.
       <div class="large4">
         <h5 class="darkText">Order It</h3>
         <p class="">
-  Enter in all your personal information so we know where to send your surprise. OR enter in the address of someone else you want to receive the box.
+  Enter in all your personal information so we know where to send your surprise. OR enter in the address of someone else you want to receive the box <i class="twa twa-wink"></i>.
         </p>
       </div>
       <div class="large4">
         <h5 class="darkText">Surprise!</h3>
         <p class="">
-  Wait a few days and then open up your box. Before you do anything else take pictures and tweet about it.
+  Wait a few days and then open up your box. Before you do anything else take pictures and tweet about it. Use <strong>#WhatsTheBox</strong> to share your stuff with us.
         </p>
       </div>
 		</div>
@@ -90,10 +88,10 @@ It is pretty simple to get your very own suprise box.
 	<div class="container">
 
 		<div class="centerColumn">
-      <h3 class="centerText darkText">Extra Stuff</h3>
+      <h3 class="centerText darkText roundText">Extra Stuff</h3>
       <!-- <img src="img/icons/Box1@2x.png" class="padding-small"> -->
         <p class="biggerText centerText">
-Want to learn more?
+          Want to learn more? <i class="twa twa-confused"></i>
         </p>
     </div>
 
@@ -101,13 +99,13 @@ Want to learn more?
       <div class="large6">
         <h5 class="darkText">Contesting</h3>
         <p class="">
-  Check out all our social media channels to find some cool contest. You can find us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a>, and we are even on SnapChat. Follow @Nicebox!
+  Check out all our social media channels to find some cool contest and fun stuff. You can find us @Nicebox on <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a>, and we are even on Snapchat.
         </p>
       </div>
       <div class="large6">
         <h5 class="darkText">Blog</h3>
         <p class="no-margin">
-  We even have a blog. What do we blog about? Um, everything, jeez. You better start reading it. Seriously though. If you dont read it then idk.
+  We even have a blog. What do we blog about? Um, everything, jeez. You better start reading it. Seriously though. If you dont read it then you won't get a secret 10% off coupon.
         </p>
         <p class="rightText no-margin"><a href="" class="nb-button darkBlueButton noUnderline no-margin">Blog <i class="fa fa-long-arrow-right"></i></a></p>
       </div>
@@ -123,13 +121,14 @@ Want to learn more?
 		<div class="centerColumn">
       <h3 class="centerText">Order A Box</h3>
       <p class="biggerText centerText">
-Are you ready? Pick a box and place an order.
+        Are you ready? Pick a box and place an order. <i class="twa twa-point-down"></i>
       </p>
-			<p class="centerText">
-				<a href="checkout5.php" class="nb-button bigButton noUnderline">$5 Small Box</a>
-				<a href="checkout10.php" class="nb-button bigButton noUnderline">$10 Medium Box</a>
-				<a href="checkout20.php" class="nb-button bigButton noUnderline">$20 Large Box</a>
-			</p>
+    </p>
+    <p class="centerText">
+      <a href="checkout5.php" class="nb-button bigButton noUnderline margin-x fullButton margin-small">Small Box ($5)</a>
+      <a href="checkout10.php" class="nb-button bigButton noUnderline margin-x fullButton margin-small">Medium Box ($10)</a>
+      <a href="checkout20.php" class="nb-button bigButton noUnderline margin-x fullButton margin-small">Large Box ($20)</a>
+    </p>
     </div>
 
 	</div>

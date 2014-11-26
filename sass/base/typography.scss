@@ -1,5 +1,6 @@
 // review typography for duplicate, repeated code []
 
+
 body {
     -webkit-font-smoothing: antialiased;
     background-color: $base-background-color;
@@ -13,6 +14,7 @@ body {
       line-height: $unitless-mobile-line-height;
 	}
 }
+
 
 // HEADERS
 h1,h2{color:$base-header-color;}
@@ -131,21 +133,23 @@ pre{white-space:initial;}
 //   margin-top:0px;
 //   margin-bottom:  $base-font-size * 1.618;}
 
-// more stuff
+// More stuff
 .roundText{@include roundText;}
 .boldText{@include boldText;}
 .lightText{@include lightText;}
 .lighterText{@include lighterText;}
 
-// for larger font size
+// For larger font size
 .bigText{@include bigText;}
 .biggerText{@include biggerText;}
 
-// for smaller font size
+// For smaller font size
 .smallText{@include smallText;}
+
 
 // ALIGNMENT
 .centerText{@include centerText;}
+.centerTextMobile{@include centerTextMobile;}
 .rightText{@include rightText;}
 .leftText{@include leftText;}
 .justifyText{@include justifyText;}
@@ -158,6 +162,8 @@ pre{white-space:initial;}
 .noBorder{border:none !important;}
 .noLineHeight{line-height:initial !important;}
 
+
+// Dark text
 .darkText{
   color:$slate;
   a{

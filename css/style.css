@@ -9,8 +9,6 @@
 /*thomas@studentcarshare.ca       */
 /*                                */
 /*--------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,300,700);
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 .center {
   display: block;
   margin: 0 auto;
@@ -174,6 +172,26 @@
   margin: 30%;
 }
 
+.margin-x {
+  margin-left: 0.809em !important;
+  margin-right: 0.809em !important;
+}
+@media screen and (max-width: 640px) {
+  .margin-x {
+    margin-left: 0.7281em !important;
+    margin-right: 0.7281em !important;
+  }
+}
+
+.margin-xR {
+  margin-right: 0.809em !important;
+}
+@media screen and (max-width: 640px) {
+  .margin-xR {
+    margin-right: 0.7281em !important;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -203,9 +221,8 @@ input[type=text], input[type=password], input[type=email], textarea, select, inp
   padding-bottom: 0.33333em;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
   border: 4px solid #f0d1c0;
+  margin: 0px;
   box-shadow: none;
   outline: none;
   width: 100%;
@@ -215,8 +232,6 @@ input[type=text], input[type=password], input[type=email], textarea, select, inp
     padding-top: 0.3em;
     padding-left: 0.45em;
     padding-right: 0.45em;
-    margin-left: 0.45em;
-    margin-right: 0.45em;
   }
 }
 input[type=text]:hover, input[type=password]:hover, input[type=email]:hover, textarea:hover, select:hover, input[type=number]:hover {
@@ -233,8 +248,6 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, tex
   padding-bottom: 0.33333em;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
   border-radius: 0.2em;
   font-weight: 700;
   white-space: pre;
@@ -249,8 +262,6 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, tex
     padding-top: 0.3em;
     padding-left: 0.45em;
     padding-right: 0.45em;
-    margin-left: 0.45em;
-    margin-right: 0.45em;
   }
 }
 .nb-button:hover, input[type="submit"]:hover {
@@ -268,8 +279,19 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, tex
   }
 }
 
+@media screen and (max-width: 640px) {
+  .fullButton {
+    width: 100%;
+    display: block;
+    padding: 0px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
+
 .bigButton {
   border: #d09464 3px solid !important;
+  font-family: 'Open Sans', sans-serif;
 }
 .bigButton:hover {
   border-color: #c4793d !important;
@@ -545,6 +567,12 @@ pre {
 
 .centerText {
   text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .centerTextMobile {
+    text-align: center;
+  }
 }
 
 .rightText {
@@ -918,6 +946,65 @@ body {
   }
 }
 
+@media screen and (max-width: 640px) {
+  .smallShift1 {
+    margin-left: 8.5298%;
+  }
+}
+
+.large1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+}
+.large1:last-child {
+  margin-right: 0;
+}
+
+.large2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+}
+.large2:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 640px) {
+  .large2 {
+    margin-left: 8.5298%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+  }
+  .large2:last-child {
+    margin-right: 0;
+  }
+}
+
+.large3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+.large3:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 640px) {
+  .large3 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+  }
+  .large3:last-child {
+    margin-right: 0;
+  }
+}
+
 .large4 {
   float: left;
   display: block;
@@ -938,6 +1025,16 @@ body {
   .large4:last-child {
     margin-right: 0;
   }
+}
+
+.large5 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+}
+.large5:last-child {
+  margin-right: 0;
 }
 
 .large6 {
@@ -984,6 +1081,48 @@ body {
   }
 }
 
+.large10 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+}
+.large10:last-child {
+  margin-right: 0;
+}
+
+.large11 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%;
+}
+.large11:last-child {
+  margin-right: 0;
+}
+
+.large12 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+.large12:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 640px) {
+  .large12 {
+    margin-left: 8.5298%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+  }
+  .large12:last-child {
+    margin-right: 0;
+  }
+}
+
 .small4 {
   float: left;
   display: block;
@@ -1002,6 +1141,18 @@ body {
 }
 .small8:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .small9 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+  }
+  .small9:last-child {
+    margin-right: 0;
+  }
 }
 
 .large6small12 {
@@ -1025,6 +1176,16 @@ body {
   }
 }
 
+.expInput {
+  float: left;
+  display: block;
+  margin-right: 7.42297%;
+  width: 46.28851%;
+}
+.expInput:last-child {
+  margin-right: 0;
+}
+
 .whiteBackground {
   background: white;
 }
@@ -1037,13 +1198,10 @@ body {
   background: #e9edf2;
 }
 
-.animateBackground {
-  background-image: url("../img/background.gif");
-}
-
 .menu {
   list-style: none;
   margin: 0px;
+  padding: 0px;
 }
 .menu li {
   display: inline;
@@ -1074,4 +1232,24 @@ footer a {
   .hideOnSmall {
     display: none;
   }
+}
+.activeError {
+  background: #263d5d;
+  border-color: #263d5d;
+  border-radius: 0.2em;
+  padding-top: 0.33333em;
+  padding-bottom: 0.33333em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+@media screen and (max-width: 640px) {
+  .activeError {
+    padding-top: 0.3em;
+    padding-left: 0.45em;
+    padding-right: 0.45em;
+  }
+}
+
+.hide {
+  display: none;
 }

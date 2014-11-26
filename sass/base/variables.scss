@@ -1,13 +1,11 @@
 // clean up variables 				[]
 // only use what is nesecary 	[]
 
-// import fonts
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,300,700);
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
 // TYPOGRAPHY
 $base-font-family: 'Open Sans', sans-serif;
 $base-font-round: 'Varela Round', sans-serif;
+
 
 // SIZES
 // desktop sizes
@@ -23,6 +21,7 @@ $base-mobile-font-size: 0.9em;
 $base-mobile-line-height: $base-mobile-font-size * 1.618;
 $unitless-mobile-line-height: $base-mobile-line-height / ($base-mobile-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
 $header-mobile-line-height: $base-mobile-font-size * 1.3;
+
 
 // COLOURS
 $blue: #355581;
@@ -54,6 +53,7 @@ $dark-grey: darken( $grey, 10% );
 $white: #E9EDF2;
 $light-white: lighten( $white, 10% );
 $dark-white: darken( $white, 10% );
+
 
 // VARIABLES
 $base-background-color: $blue;

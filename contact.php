@@ -48,22 +48,34 @@ else{ }
 	<div class="container padding-bottom-x3">
 		<div class="centerColumn">
       <h1 class="centerText">Say Hello</h1>
-			<p class="centerText bigText">We love hearing from you. You are always welcome to join us online through our <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a>. Or, you can just use the below form to send a direct email to info@nicebox.co</p>
+			<p class="centerText bigText">We love hearing from you <i class="twa twa-heart"></i>. You are always welcome to join us online through our <a href="#">Facebook</a>, <a href="#">Twitter</a> and <a href="#">Instagram</a>. Or, you can just use the below form to send a direct email to info@nicebox.co</p>
 
       <p class="centerText bigText"><?php if ($check == "sent"){echo 'Message has been sent.';}?></p>
 
     <form name="form" class="form-field" id="form" method="POST">
-      <div class="row">
-        <p><input class="bigText" type="email" id="email" placeholder="Email" name="email"/></p>
+
+      <div class="container">
+        <div class="large12">
+          <label for="email">Email:</label>
+          <p><input class="bigText" type="email" id="email" placeholder="Your email address" name="email"/></p>
+        </div>
       </div>
-      <div class="row">
-        <div class="large-12 medium-12 columns">
+
+      <div class="container">
+        <div class="large12">
           <p>
+            <label for="message">Message:</label>
             <textarea id="message" class="input bigText" name="message" placeholder="Your message" name="message"></textarea>
           </p>
         </div>
       </div>
-      <input id="submit_button" type="submit" class="biggerText bigButton noLineHeight" value="Send" name="submit"/>
+
+      <div class="container">
+        <div class="large12">
+          <input id="submit_button" type="submit" class="biggerText bigButton noLineHeight fullButton" value="Send" name="submit"/>
+        </div>
+      </div>
+
     </form>
 
 		</div>

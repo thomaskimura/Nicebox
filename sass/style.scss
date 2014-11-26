@@ -1,7 +1,3 @@
-// re-organize css sheets 	[]
-// use bourbon    			[]
-// remove duplicate styles 	[]
-
 /*--------------------------------*/
 /*                                */
 /*    DON'T EDIT THE CSS FOOL!    */
@@ -13,6 +9,12 @@
 /*thomas@studentcarshare.ca       */
 /*                                */
 /*--------------------------------*/
+
+
+// re-organize css sheets 	[]
+// use bourbon    					[]
+// remove duplicate styles 	[]
+// reorgainize grid styles 	[]
 
 // cd /Applications/MAMP/htdocs/school/nicebox
 // sass installfadsdsfasdfa
@@ -48,12 +50,33 @@ body{margin:0px;}
 	}
 }
 
+.smallShift1{@media screen and (max-width: $break-small){
+	@include shift(1);}
+}
+
+.large1{@include span-columns(1);}
+
+.large2{@include span-columns(2);
+	@media screen and (max-width: $break-small){
+		@include shift(1);
+		@include span-columns(10);
+	}
+}
+
+.large3{@include span-columns(3);
+	@media screen and (max-width: $break-small){
+		@include span-columns(10);
+	}
+}
+
 .large4{@include span-columns(4);
 	@media screen and (max-width: $break-small){
 		@include shift(1);
 		@include span-columns(10);
 	}
 }
+
+.large5{@include span-columns(5);}
 
 .large6{@include span-columns(6);
 	@media screen and (max-width: $break-small){
@@ -69,9 +92,21 @@ body{margin:0px;}
 	}
 }
 
+.large10{@include span-columns(10);}
+.large11{@include span-columns(11);}
+
+.large12{@include span-columns(12);
+	@media screen and (max-width: $break-small){
+		@include shift(1);
+		@include span-columns(10);
+	}
+}
+
 .small4{@include span-columns(4);}
 .small8{@include span-columns(8);}
-
+.small9{@media screen and (max-width: $break-small){
+	@include span-columns(9);}
+}
 
 .large6small12{@include span-columns(6);
 	@media screen and (max-width: $break-small){
@@ -79,26 +114,28 @@ body{margin:0px;}
 	}
 }
 
+.expInput{
+	@include span-columns(2 of 4);
+}
 
 // COLOURS
 .whiteBackground{background:$light-white;}
 .darkBlue5Background{background:$dark-blue5;}
 .greyBackground{background:$white;}
-.animateBackground{background-image: url('../img/background.gif');
-}
 
 
 // MENU
 .menu{
 	list-style:none;
 	margin:0px;
+	padding:0px;
 	li{
 		display:inline;
 		margin-left:10px;}
 }
 
 
-// instafeed
+// INSTAFEED
 div #instafeed{
 	a{border: none;
 		display: inline-block;
@@ -113,13 +150,24 @@ div #instafeed{
 }
 
 
-// footer
+// FOOTER
 footer a{
 	padding-right:10px;
 	text-decoration:none;}
 
 
-// hide
+// HIDE
 @media screen and (max-width: $break-small){
   .hideOnSmall{display:none;}
 }
+
+
+// ERROR
+.activeError{
+	background:$dark-blue;
+	border-color:$dark-blue;
+	@include round;
+	@include border-spacing-default;
+}
+
+.hide{display:none;}

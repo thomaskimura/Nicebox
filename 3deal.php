@@ -8,22 +8,20 @@
   <div class="container padding-bottom-x3">
 		<div class="centerColumn">
       <h1 class="centerText">40% OFF</h1>
-			<p class="centerText biggerText">Get A Small Box For $3. This is the same Small Box that orignall sells for $5. In order to get a Small box for just $3 you most first share the news with your friends.</p>
+			<p class="centerText biggerText">Get A Small Box For 40% off. In order to get a Small Box for 40% off you must first share the news with your friends.</p>
 
-      <p id="shareLocked" class="centerText lightText">This offer is locked, to unlock click a button below and share it.</p>
+      <p id="shareLocked" class="centerText lightText"><i class="twa twa-lock"></i> This offer is locked, to unlock click a button below and share it.</p>
 
 			<p class="centerText" id="shareLocked">
-				<a href="#" class="nb-button  noUnderline" id="facebook-share"><i class="fa fa-facebook-square"></i> Share On Facebook</a>
+				<a href="#" class="nb-button  noUnderline fullButton margin-small margin-x" id="facebook-share"><i class="fa fa-facebook-square"></i> Share On Facebook</a>
 
-				<a href="https://twitter.com/intent/tweet?url=http://www.google.com/" class="nb-button noUnderline" id="twitter-share"><i class="fa fa-twitter-square"></i> Tweet This Page</a>
-
-				<a href="https://twitter.com/intent/tweet?url=http://www.google.ca/" class="nb-button noUnderline" id="twitter-share"><i class="fa fa-twitter-square"></i> Tweet This Page</a>
+				<a href="https://twitter.com/intent/tweet?url=http://www.google.com/" class="nb-button noUnderline fullButton margin-small margin-x" id="twitter-share"><i class="fa fa-twitter-square"></i> Tweet This Page</a>
 
       </p>
 
         <div class="none" id="shareSuccess">
-          <p class="centerText">Thanks for sharing the good news. Use the below button to purchase a Small Box for $3.</p>
-          <p class="centerText"><a href="checkout3.php" class="nb-button noUnderline">$3 Small Box</a></p>
+          <p class="centerText lightText"><i class="twa twa-unlock"></i> Thanks for sharing the good news. Use the below button to purchase a Small Box for 40% off.</p>
+          <p class="centerText"><a href="checkout3.php" class="nb-button noUnderline">Small Box</a></p>
         </div>
 		</div>
 	</div>

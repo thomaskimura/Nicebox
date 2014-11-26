@@ -8,8 +8,8 @@
 	<div class="container">
 		<div class="centerColumn">
 			<h1 class="centerText">GIFTS</h1>
-			<p class="centerText biggerText">Take a look at some of the recent boxes sent out to see what you might get. Submit your own photos on Instagram using <strong class="roundText">#WhatsMyBox</strong>. To get the photos right to our phone you should probably follow our Instagram.</p>
-      <p class="centerText"><a href="#" class="nb-button noUnderline"><i class="fa fa-instagram"></i> Follow @Nicebox</a>
+			<p class="centerText biggerText">Take a look at some of the recent boxes sent out to see what you might get. Submit your own photos on Instagram using <strong class="roundText">#WhatsTheBox</strong>. To get the photos right to our phone you should probably follow our Instagram. <i class="twa twa-sunglasses"></i></p>
+      <p class="centerText"><a href="#" class="nb-button noUnderline fullButton"><i class="fa fa-instagram"></i> Follow @Nicebox</a>
 		</div>
 	</div>
 
@@ -17,7 +17,7 @@
   	<div class="container">
   		<div class="centerColumn">
         <div id="instafeed"></div>
-        <p class="centerText margin"><a href="#" id="load-more" class="nb-button noUnderline">Load More Boxes</a></p>
+        <p class="centerText margin"><a href="#" id="load-more" class="nb-button noUnderline fullButton">Load More Boxes</a></p>
       </div>
     </div>
   </div>

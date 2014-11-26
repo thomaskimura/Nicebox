@@ -1,10 +1,11 @@
 <!--
-svg is 9kb, can it be minimized?  []
+svg is 9kb, can it be minimized?  [x]
 use pattern lab                   []
-load font awesome faster          []
+load font awesome faster          [x]
 load assets asynchronoously       []
 create pages for user login       []
 create password reset page        []
+minimize and inline emoj          [x]
 -->
 
 
@@ -43,13 +44,17 @@ create password reset page        []
         </center>
       </div>
 
-      <p class="centerText bigText">Nicebox offers surprise <a href="gifts.php">gifts</a>. <strong>Place an order and we send you a secret package</strong> with randomly selected items. You will receive something different with every order. The bigger the box, the bigger the surprise. <a href="about.php" class="smallText">Read more <i class="fa fa-long-arrow-right"></i></a></p>
+      <p class="centerText bigText">Nicebox offers surprise <a href="gifts.php">gifts</a>. We send you a secret package with randomly selected items. You will receive something different with every order. The bigger the box, the bigger the surprise <i class="twa twa-smirk"></i>.</p>
+      <p class="centerText">
+        <a href="about.php" class="">Learn more <i class="fa fa-long-arrow-right"></i></a>
+      </p>
 			<p class="centerText">
-				<a href="checkout5.php" class="nb-button bigButton noUnderline">Small Box</a>
-				<a href="checkout10.php" class="nb-button bigButton noUnderline">Medium Box</a>
-				<a href="checkout20.php" class="nb-button bigButton noUnderline">Large Box</a>
+				<a href="checkout5.php" class="nb-button bigButton noUnderline margin-x fullButton margin-small">Small Box ($5)</a>
+				<a href="checkout10.php" class="nb-button bigButton noUnderline margin-x fullButton margin-small">Medium Box ($10)</a>
+				<a href="checkout20.php" class="nb-button bigButton noUnderline margin-x fullButton margin-small">Large Box ($20)</a>
 			</p>
-			<p class="smallText centerText"><a href="3deal.php">Get a box for just $3 <i class="fa fa-long-arrow-right"></i></a></p>
+			<p class="smallText centerText"><a href="3deal.php">40% off a Small Box <i class="fa fa-long-arrow-right"></i></a></p>
+      
 		</div>
 	</div>
 

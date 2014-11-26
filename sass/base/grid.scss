@@ -1,5 +1,6 @@
 // fix padding and margin spacing []
 
+
 // CLASSSES
 // center stuff
 .center{
@@ -38,6 +39,8 @@
 .margin15{margin:15%;}
 .margin20{margin:20%;}
 .margin30{margin:30%;}
+.margin-x{@include margin-x;}
+.margin-xR{@include margin-xR;}
 
 img{
 	display: block;

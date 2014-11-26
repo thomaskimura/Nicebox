@@ -1,15 +1,22 @@
+// minimize button classes  []
+// remove bigDarkButton     []
+
+
 //FORMS
-textarea { resize:vertical;
+textarea {
+  resize:vertical;
   height:140px;}
 
 select{background-color: #fff;
 &:hover{background-color:#fff;}}
 
+// Input elements
 input[type=text], input[type=password], input[type=email], textarea, select, input[type=number]{
   border:none;
   @include round;
-  @include border-spacing;
+  @include border-spacing-default;
   @include border;
+  margin:0px;
   box-shadow:none;
   outline:none;
   width:100%;
@@ -20,11 +27,11 @@ input[type=text], input[type=password], input[type=email], textarea, select, inp
     border-color:$base-border-color-focus;}
 }
 
-//default button will appear orange
-//use colour class to apply different colours
+// Default button will appear orange
+// Use button colour class to apply different colours
 .nb-button, input[type="submit"]{
   cursor:pointer;
-  @include border-spacing;
+  @include border-spacing-default;
   @include round;
   font-weight:700;
   white-space:pre;
@@ -45,14 +52,28 @@ input[type=text], input[type=password], input[type=email], textarea, select, inp
   }
 }
 
+// Full width button on mobile
+.fullButton{
+  @media screen and (max-width: 640px) {
+    width: 100%;
+    display: block;
+    padding:0px;
+    margin-left:0px !important;
+    margin-right:0px !important;
+  }
+}
+
+// Larger button
 .bigButton{
   border:$orange 3px solid !important;
+  font-family:'Open Sans', sans-serif;
   &:hover{
     border-color:$dark-orange !important;}
   &:active{
     border-color:$light-orange !important;}
 }
 
+// Larger dark button
 .bigDarkButton{
   border:$dark-blue 3px solid !important;
   &:hover{
@@ -61,6 +82,7 @@ input[type=text], input[type=password], input[type=email], textarea, select, inp
     border-color:$light-blue !important;}
 }
 
+// Change colour of button
 .orangeButton{
 	background:$orange !important;
 	color:#fff !important;
@@ -70,6 +92,7 @@ input[type=text], input[type=password], input[type=email], textarea, select, inp
 		background:$light-orange !important;}
 }
 
+// Change colour of button
 .darkBlueButton{
 	background:$dark-blue !important;
 	color:#fff !important;
@@ -79,6 +102,7 @@ input[type=text], input[type=password], input[type=email], textarea, select, inp
 		background:$light-blue !important;}
 }
 
+// Default button
 button{
   cursor:pointer;
   @include border-spacing;
